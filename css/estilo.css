@@ -1,0 +1,142 @@
+/** Gutiérrez Ceñal, Begoña. DNI:53549935R **/
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    font-family: 'Indie Flower', cursive;
+  
+}
+
+header {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+.columnas {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+:link{
+    color: black;
+}
+.nav-link.active {
+    background-color: lightgrey;
+    color:white;
+}
+
+.nav-link:hover {
+    background-color: rgb(213, 213, 213);
+    color: white;
+}
+
+.nav-link.disabled {
+    color: rgb(213,213,213);
+}
+
+.dropdown-item.active{
+    background-color: lightgrey;
+    color:white;
+}
+
+#formContacto {
+    padding: 20px;    
+}
+
+#contacto {
+    padding-bottom: 20px;
+    text-align: center;
+}
+ 
+#contacto2 {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+ }
+
+a{
+    color: black;
+}
+
+a:hover {
+    color: black;
+}
+h1 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+img {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+figcaption {
+    font-size: smaller;
+
+}
+
+#logo {
+    padding-left: 0px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    width: 50px;
+    height: 50px;
+}
+
+#focusimg {
+    overflow: hidden;
+}
+
+#imgppal:hover {
+    filter: grayscale(70%);
+}
+
+.card-img-top:hover {
+    -webkit-transform: scale(0.8);
+    transform: scale(0.8);
+}
+
+div.etiquetas {
+    background-color: lightgrey;
+    text-align: center;
+}
+
+input.uniBien {
+    margin-left: 100px;
+    background: lightgrey;
+}
+input.uniMal {
+    margin-left: 100px;
+    background: gray;
+    color: white;
+}
+
+
+div.divsNo {display:none;}
+div.divsSi {display:yes;}
+
+#divbotones { 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+#divPago{
+    height: 150px;
+    padding-left:10px;
+    background:lightgrey;
+}
+/*CSS VALIDACION*/	
+input.textBien {background:lightgrey;}
+input.textMal {
+    background:gray;
+    color: white;
+}
+select.textBien {background:lightgrey;}
+select.textMal {
+    background:gray;
+    color: white;
+}	
+span.alertTipoDeTarjeta {color:red;}
+
+
