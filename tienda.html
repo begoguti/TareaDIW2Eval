@@ -1,0 +1,465 @@
+<!--Gutiérrez Ceñal, Begoña. DNI:53549935R-->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--inclusion de hoja de estilo -->
+    <link href="bs/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- hoja de estilo del proyecto-->
+    <link href="css/estilo.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" sizes="favicon-32x32" href="img/favicon-32x32.png"/>
+    <!-- hoja de estilos para utilizar icons de bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"/>
+    <title>Contacto</title>
+  </head>
+  <body>
+
+<!--------------------------------------- HEADER ------------------------------------->
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-white bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img id="logo" src="img/Viajar es un Placer.png" alt="En Familia">
+                    <span class="text-black fs-3 fw-bold">Viajar es un Placer</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                    <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                        España
+                    </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="asturias.html">Asturias</a></li>
+                  <li><a class="dropdown-item" href=#>Leon</a></li>
+                  <li><a class="dropdown-item" href=#>Pontevedra</a></li>
+                  <li><a class="dropdown-item" href=#>Sevilla</a></li>
+                </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Europa
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href=#>Paris</a></li>
+                                <li><a class="dropdown-item" href=#>Rovaniemi</a></li>
+                                <li><a class="dropdown-item" href=#>Londres</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="tienda.html">Tienda online</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-3" type="email" placeholder="Correo Electronico" aria-label="Email"/>
+                        <button class="btn btn-outline-secondary" type="submit">
+                            Suscribir
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<!--------------------------- SECCION SECUNDARIA DE LA PAGINA -------------------------->
+    <section class="container-fluid">
+        <div class="row" id="shop">
+            <div class="col-12">
+                <h1 class="text-center">Nuestra pequeña tienda online</h1>
+            </div>
+            <div class="col-12">
+                <p class="text-center">Aqui os dejamos algunos productos personlizados con nuestra marca.</p>
+                <br>
+                <p class="text-center">Ofrecemos asesoramiento para vuestros viajes, toda nuestra experiencia a vuestra disposicion.</p>
+                <br>
+                <p class="text-center">Tambien alquilamos nuestra furgoneta para vuestras escapadas.</p>
+            </div>
+        </div>
+    </section>
+
+<!------------------------------ SECCION DE LA TIENDA ONLINE ----------------------------> 
+
+        <main class="container">
+        <div class="container-fluid">
+        <div class="row mt-3 g-3">
+            <div class="col-12">
+                <div id="todo" class="todoNo">
+                    <div id="menu" class="menuNo">
+
+                    <!--Producto del 1 al 9-->
+                        <div id="div1" name="DIVS"></div>
+				        <div id="div2" name="DIVS"></div>
+				        <div id="div3" name="DIVS"></div>
+				        <div id="div4" name="DIVS"></div>
+				        <div id="div5" name="DIVS"></div>
+				        <div id="div6" name="DIVS"></div> 
+                    </div>				
+                    <!--Botones de compra-->
+				    <div id="divbotones">
+					<input type="button" id="botonTotal" value="Calcular total"/>
+					<input type="button" id="botonDatos" value="Datos personales" disabled="disabled"/>
+					<input type="button" id="botonPago" value="Pago" disabled="disabled"/>
+					<input type="button" id="botonConfirmar" value="Confirmar pedido" disabled="disabled"/>
+				    </div>
+
+				
+				        <!--zona de compra, tablas, formularios, etc.-->
+				        <div id="divZonaCompra" class="divZonaCompraNo">
+
+				
+					<!--Carrito de la compra-->
+					<div id="divTotal" class="divsNo">
+						<p><b>Carrito de la compra, si quiere hacer alguna modificacion aun esta a tiempo:</b></p>
+						<table id="tablaTotal"></table>
+					</div>
+				
+				
+					<!--Datos personales-->				
+					<div id="divDatos" class="divsNo">
+						<p><b>Introduzca sus datos personales:</b></p>
+
+							<div id="divDatosPersonales0">
+								<div id="divDatosPersonales1">
+									<label>Nombre completo:</label><br/>
+									<input type="text" id="nombre" value="" size="26" /><br/>
+									
+									
+									<label>DNI:</label><br/>
+									<input type="text" id="dni" value="" size="8" maxlength="9" /><br/>
+									
+									
+									<label>Fecha de nacimiento:</label><br/>
+									<select id="fechaNacimientoDia">
+										<option value=""> dia </option>
+									</select>
+									<select id="fechaNacimientoMes">
+										<option value="">      mes</option>
+										<option value="1">Enero</option>
+										<option value="2">Febrero</option>
+										<option value="3">Marzo</option>
+										<option value="4">Abril</option>
+										<option value="5">Mayo</option>
+										<option value="6">Junio</option>
+										<option value="7">Julio</option>
+										<option value="8">Agosto</option>
+										<option value="9">Septiembre</option>
+										<option value="10">Octubre</option>
+										<option value="11">Noviembre</option>
+										<option value="12">Diciembre</option>
+									</select>			
+									<select id="fechaNacimientoAnio">
+										<option value="">  año </option>
+									</select><br/>
+								</div>
+								
+								<div id="divDatosPersonales2">
+									<label>Telefono movil:</label><br/>
+									<input type="text" id="movil" value="" size="8" maxlength="9"/><br/>
+
+									<label>Email:</label><br/>
+									<input type="text" id="email1" value="" size="25" /><br/>
+									
+									<label>Repita el email:</label><br/>
+									<input type="text" id="email2" value="" size="25" />							
+								</div>
+							</div>
+
+							
+						<div id="divDomicilio">
+							<label>Tipo de via:</label>
+							<select id="tipoDeVia">
+								<option value="Avenida">Avenida</option>
+								<option value="Calle"selected="selected">Calle</option>
+								<option value="Camino">Camino</option>
+								<option value="Carretera">Carretera</option>
+								<option value="Pasaje">Pasaje</option>
+								<option value="Plaza">Plaza</option>
+								<option value="Residencia">Residencia</option>
+								<option value="Ronda">Ronda</option>
+								<option value="Travesia">Travesia</option>
+								<option value="Urbanizacion">Urbanizacion</option>
+							</select>     
+							
+							<label>Nombre via:</label>
+							<input type="text" id="viaNombre" value="" size="20" /><br/>
+							
+							<label>Nº/km:</label>
+							<input type="text" id="viaNumero" value="" size="2" />  
+								
+							<label>Bloque:</label>
+							<input type="text" id="viaBloque" value="" size="2" />         
+
+							<label>Escalera:</label>
+							<input type="text" id="viaEscalera" value="" size="2" />  
+								
+							<label>Piso:</label>
+							<input type="text" id="viaPiso" value="" size="2" /><br/>
+							
+							
+							<label>Localidad:</label>
+							<input type="text" id="localidad" value="" size="13"/>  
+							
+							<label>Codigo Postal:</label>
+							<input type="text" id="codigoPostal" value="" size="5" maxlength="5"/>  
+							
+							<label>Provincia:</label>
+							<select id="provincia">
+								<option value="">Provincia</option>
+								<option value="15">A coruña</option>
+								<option value="1">Álava</option>
+								<option value="2">Albacete</option>
+								<option value="3">Alicante</option>
+								<option value="4">Almería</option>
+								<option value="33">Asturias</option>
+								<option value="5">Ávila</option>
+								<option value="6">Badajoz</option>
+								<option value="7">Baleares</option>
+								<option value="8">Barcelona</option>
+								<option value="9">Burgos</option>
+								<option value="10">Cáceres</option>
+								<option value="11">Cádiz</option>
+								<option value="39">Cantabria</option>
+								<option value="12">Castellón</option>
+								<option value="51">Ceuta</option>
+								<option value="13">Ciudad Real</option>
+								<option value="14">Córdoba</option>
+								<option value="16">Cuenca</option>
+								<option value="99">Extranjero</option>
+								<option value="17">Girona</option>
+								<option value="18">Granada</option>
+								<option value="19">Guadalajara</option>
+								<option value="20">Guipúzcoa</option>
+								<option value="21">Huelva</option>
+								<option value="22">Huesca</option>
+								<option value="23">Jaén</option>
+								<option value="26">La rioja</option>
+								<option value="35">Las palmas</option>
+								<option value="24">León</option>
+								<option value="25">Lleida</option>
+								<option value="27">Lugo</option>
+								<option value="28">Madrid</option>
+								<option value="29">Málaga</option>
+								<option value="52">Melilla</option>
+								<option value="30">Murcia</option>
+								<option value="31">Navarra</option>
+								<option value="32">Ourense</option>
+								<option value="34">Palencia</option>
+								<option value="36">Pontevedra</option>
+								<option value="37">Salamanca</option>
+								<option value="38">Santa cruz de tenerife</option>
+								<option value="40">Segovia</option>
+								<option value="41">Sevilla</option>
+								<option value="42">Soria</option>
+								<option value="43">Tarragona</option>
+								<option value="44">Teruel</option>
+								<option value="45">Toledo</option>
+								<option value="46">Valencia</option>
+								<option value="47">Valladolid</option>
+								<option value="48">Vizcaya</option>
+								<option value="49">Zamora</option>
+								<option value="50">Zaragoza</option>
+							</select>
+						</div>								
+					</div>					
+					
+					
+					<!--Datos de pago-->
+					<div id="divPago" class="divsNo">
+						<p><b>Introduzca los datos de la tarjeta de credito/debito donde se cargara el cobro:</b></p>
+
+						
+						<label>Titular de la tarjeta:</label><br/>
+						<input type="text" id="titular" value="" size="26" /><br/>
+
+						
+						<div id="metodosDePago">
+							<label><span  id="alertTipoDeTarjeta">Tipo de tarjeta:</span></label><br/>
+							<label for="visa">
+								<input type="radio" id="visa" name="tarjetas" class="logoTarjetas" value="Visa">
+								<img src="img/pago/visa.gif"></img>
+							</label>
+							  
+							<label for="masterCard">
+								<input type="radio" id="masterCard" name="tarjetas" class="logoTarjetas" value="MasterCard">
+								<img src="img/pago/mastercard.gif"></img>
+							</label>
+							  
+							<label for="amex">
+								<input type="radio" id="amex" name="tarjetas" class="logoTarjetas" value="American Express">
+								<img src="img/pago/amex.gif"></img>
+							</label>
+							  
+							<label for="aurora">
+								<input type="radio" id="aurora" name="tarjetas" class="logoTarjetas" value="Aurora">
+								<img src="img/pago/aurora.gif"></img>
+							</label>
+					
+						</div>
+						
+						
+						<div id="divNumeroTarjeta">
+							<label>Número tarjeta y CVC:</label><br/>
+							<input type="text" id="numeroTarjeta" value="" size="15" maxlength="16" />
+							<input type="text" id="cvcTarjeta" value="" size="2" maxlength="3" /><br/>
+							
+							
+							<select id="mesTarjeta">
+								<option value="">  mes </option>
+							</select>
+
+							<select id="anioTarjeta">
+								<option value="">  año </option>
+							</select>
+						</div>
+					</div>						
+				        </div>
+			        </div>
+
+                </div>
+                </div>
+            </div>
+        </div>
+        </main>
+
+
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+          <!-- Left -->
+          <div class="me-5 d-none d-lg-block">
+            <span>Sigue conectado con nosotros</span>
+          </div>
+          <!-- Left -->
+      
+          <!-- Right -->
+          <div>
+            <a href="" class="me-4 text-reset">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="bi bi-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+              <i class="bi bi-instagram"></i>
+            </a>
+          </div>
+          <!-- Right -->
+        </section>
+        <!-- Section: Social media -->
+      
+        <!-- Section: Links  -->
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Conocenos
+                </h6>
+                <p>
+                  <a href="nosotros.html" class="text-reset">Nosotros</a>
+                </p>
+                <p>
+                  <a href="mapaWeb.html" 
+                  class="text-reset">Mapa Web</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  España
+                </h6>
+                <p>
+                  <a href="asturias.html" class="text-reset">Asturias</a>
+                </p>
+                <p>
+                  <a href="https://leon.es/" class="text-reset">Leon</a>
+                </p>
+                <p>
+                  <a href="https://www.visit-pontevedra.com/" class="text-reset">Pontevedra</a>
+                </p>
+                <p>
+                  <a href="https://www.sevilla.org/" class="text-reset">Sevilla</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Europa
+                </h6>
+                <p>
+                  <a href="https://es.parisinfo.com/" class="text-reset">Paris</a>
+                </p>
+                <p>
+                  <a href="https://www.visitrovaniemi.fi/es/" class="text-reset">Rovaniemi</a>
+                </p>
+                <p>
+                  <a href="https://www.visitlondon.com/es" class="text-reset">Londres</a>
+                </p>
+              </div>
+              <!-- Grid column -->
+      
+              <!-- Grid column -->
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                <p><i class="fas fa-home me-3"></i> Gijon, Asturias</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  viajar_es_un_placer@gmail.com
+                </p>
+                <p><i class="bi bi-telephone"></i>123 456 789</p>
+                <p><i class="bi bi-phone"></i>987 654 321</p>
+              </div>
+              <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+          </div>
+        </section>
+        <!-- Section: Links  -->
+      
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+          © 2023 Copyright:
+          <a class="text-reset fw-bold">
+            Begoña Gutierrez Ceñal
+          </a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+    <script src="bs/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="./js/codigo.js"></script>
+
+  </body>
+</html>>
